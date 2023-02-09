@@ -28,7 +28,7 @@ LDFLAGS = \
 
 all: LoopConvert
 LoopConvert: LoopConvert.cpp
-	$(CXX) -g -Wall LoopConvert.cpp $(CXXFLAGS) -o LoopConvert $(LDFLAGS)
+	$(CXX) -g -Wall LoopConvert.cpp $(CXXFLAGS) -o bin/LoopConvert $(LDFLAGS)
 
 .PHONY: clean
 clean: rm *.o *.exe
