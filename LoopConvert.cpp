@@ -321,7 +321,7 @@ int main(int argc, const char **argv) {
 	  second_part_start = first_part_end + 1;
 	  second_part_end   = second_part_start + loops[i].num_lines;
 
-	  outdata << first_part_start << " " << first_part_end << " " << second_part_start << " " << second_part_end << "\n";
+	  outdata << loops[i].body_start_line << " " << first_part_start << " " << first_part_end << " " << second_part_start << " " << second_part_end << "\n";
 	  acc += loops[i].num_lines + 1;
   }
   outdata.close();
